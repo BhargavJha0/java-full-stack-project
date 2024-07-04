@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: url(./loginbackground.jpg);
+        background-size: cover;
+        color: ghostwhite;
+    }
+.Login{
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+    
+    backdrop-filter: blur(12px);
+}
+.Login input{
+   border: 3px solid gray;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   background: none; 
+    margin: 0%;
+    color: snow;
+text-align: center;
+
+width: 90%;
+
+}
+.mainlogin{
+    display: flex;
+    
+    margin: 10px;
+    padding: 23px 21px;
+button{
+   background-color: rgb(45, 126, 233);
+}
+.signup{
+    margin: 12px;
+    width: 50%;
+}
+.loginbutton{
+    margin: 12px;
+    border:2px solid gray;
+}
+
+}
+
+
+
+
+</style>
+
+
+
+<body>
+    <div class="mainlogin">
+    <form action="gologin" method="get">
+
+<div class="Login">
+    <h2> Enter your email</h2>
+    <input type="email" placeholder="your email" name="email">
+<h2> Enter your Password
+</h2>
+<input type="password" placeholder="password" name="password">
+<button class="loginbutton">Login</button>
+
+</div>
+<div class="signup">
+    <form action="signup">
+
+        <button>signup</button>
+
+    </form>
+</div>
+
+
+
+
+    </form>
+</div>
+    
+</body>
+</html>
