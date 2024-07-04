@@ -25,7 +25,7 @@ public class Add  extends HttpServlet{
 		try 
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fooddelivery","root","Bhargav1@");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fooddelivery","username","password");
 			PreparedStatement ps = con.prepareStatement("INSERT INTO ordered (name,address, mode) VALUES (?, ? ,?)");
 			ps.setString(1, name);
             ps.setString(2, address);
